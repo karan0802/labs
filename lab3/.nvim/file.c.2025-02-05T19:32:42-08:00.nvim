@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define LENGTH 5
+
+int main() {
+
+  char *history[LENGTH];
+  char *buff = NULL;
+  size_t count = 0;
+
+  while(1){
+    printf("Enter input = ");
+    if (getline(&buff, &count, stdin) == -1) {
+      printf("Error reading input .\n");
+      free(buff);
+    }
+    // replace \n by \0
+    for(size_t i =0; i < count; i++){
+    }
+  }
+}

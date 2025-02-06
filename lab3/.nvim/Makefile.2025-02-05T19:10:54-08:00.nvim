@@ -1,0 +1,2 @@
+file1: file1.c
+	clang -o file1 file.c

@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(){
+  int line_num =5;
+  char *array[line_num][100];
+  int count =0;
+
+
+  printf("Enter input = ")
+  for(int i =0;i<5;i++){
+  printf("> ");
+  if (getline(&array[i],&count, stdin) == -1){
+    printf("Error reading input .\n");
+    return 1;
+  }
+  }
+  for(int i =0;i<5;i++)
+  {
+    printf("%s\n, array[i]")
+
+  }
+  
+}
